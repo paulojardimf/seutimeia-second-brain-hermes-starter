@@ -1,16 +1,25 @@
 ---
 name: higiene-semanal
-description: Revisão estrutural semanal do brain para manter governança, legibilidade e utilidade.
+description: Revisão semanal da estrutura do second brain para manter legibilidade, governança e aderência à realidade.
 ---
 
-# higiene-semanal
+# Higiene semanal
 
-## Checklist
-- pastas relevantes com README
-- projetos ativos coerentes com a realidade
-- rotinas documentadas
-- histórico separado de área ativa
-- placeholders que já deveriam ter sido preenchidos
+## Objetivo
+Garantir que o second brain não degenere em pasta de arquivos soltos, backlog duplicado e contexto velho.
+
+## Trigger
+- cron semanal
+- antes de compartilhar o repositório com alguém
+- antes de ligar automações novas
+
+## Processo
+1. detectar arquivos sem pasta adequada
+2. detectar pastas sem `README.md`
+3. detectar documento ativo citado no mapa mas inexistente
+4. detectar material de legado misturado na área ativa
+5. detectar placeholders antigos demais
+6. corrigir ou registrar ação externa necessária
 
 ## Saída esperada
-Lista curta do que corrigir e do que já está saudável.
+Árvore limpa, legível e coerente.

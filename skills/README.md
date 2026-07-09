@@ -1,17 +1,27 @@
-# skills/
+# Mapa de Skills (`skills/`)
 
-Guarda as skills-base do starter kit, a skill instalável de onboarding e futuras adaptações.
+## Propósito
+Esta pasta guarda as skills operacionais do starter kit, a skill instalável de onboarding e futuras adaptações do ambiente.
+
+Skills aqui não são decoração. Elas existem para codificar:
+- como o contexto é lido
+- como o dia é priorizado
+- como a sessão é salva
+- como a estrutura é higienizada
+- como o onboarding acontece sem improviso
 
 ## Conteúdo atual
-- `starter/cerebro/`
-- `starter/rotina/`
-- `starter/salve/`
-- `starter/higiene-semanal/`
-- `starter/varredura-de-sessoes/`
-- `installable/seutimeia-second-brain-onboard/`
+| Skill / grupo | Caminho | Papel |
+|---|---|---|
+| onboarding instalável | `installable/seutimeia-second-brain-onboard/` | conduzir a implantação inicial do repo clonado |
+| `cerebro` | `starter/cerebro/` | ligar contexto e produzir briefing curto |
+| `rotina` | `starter/rotina/` | cockpit diário curto |
+| `salve` | `starter/salve/` | flush de fim de sessão |
+| `higiene-semanal` | `starter/higiene-semanal/` | revisão estrutural semanal |
+| `varredura-de-sessoes` | `starter/varredura-de-sessoes/` | consolidado executivo de sessões |
 
 ## Skill instalável principal
-A skill que deve ser instalada primeiro é:
+A primeira skill que deve ser instalada é:
 - `seutimeia-second-brain-onboard`
 
 Origem no repositório:
@@ -28,5 +38,13 @@ Depois:
 3. carregue `/skill seutimeia-second-brain-onboard`
 4. diga: `vamos iniciar meu second brain`
 
-## Regra
-Skill boa tem trigger, entrada, processamento e saída claros.
+## Regra de modelagem
+Skill boa tem, no mínimo:
+- objetivo
+- trigger / quando usar
+- entradas
+- processo
+- saída esperada
+- regra crítica ou anti-padrões
+
+Se não houver isso, provavelmente ainda é só nota ou playbook frouxo.

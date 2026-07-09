@@ -1,20 +1,30 @@
 ---
 name: salve
-description: Consolida o que aconteceu na sessão e materializa no segundo cérebro só o que é durável.
+description: Fecha a sessão sem perder decisões, aprendizados e contexto durável, publicando só o que merece virar memória operacional.
 ---
 
-# salve
+# Salve
 
-## Quando usar
-- fim de sessão
-- depois de decisão importante
-- depois de aprendizado relevante
+## Objetivo
+Fechar uma sessão sem perder decisões, contexto de projeto e aprendizados duráveis.
 
-## Passos
-1. revisar decisões, aprendizados e pendências
-2. atualizar contexto e projetos quando fizer sentido
-3. registrar uma nota de sessão ou diário
-4. commitar e publicar se o fluxo pedir
+## Trigger
+- fim de sessão relevante
+- conclusão de entrega com mudança estrutural
+- pedido do usuário para registrar o que ficou decidido
 
-## Regra
-Não despejar conversa bruta no repositório.
+## Entradas
+- decisões tomadas
+- arquivos alterados no repositório
+- contexto de projeto impactado
+- mudanças que afetam rotinas, ferramentas ou governança
+
+## Processo
+1. revisar o que realmente virou fato durável
+2. atualizar somente os arquivos canônicos necessários
+3. verificar se arquivos novos ficaram sem README correspondente
+4. publicar no GitHub usando o padrão canônico
+5. se o push falhar, explicitar o ponto de falha
+
+## Saída esperada
+Repositório consistente, atualizado e sem lixo transitório na área ativa.

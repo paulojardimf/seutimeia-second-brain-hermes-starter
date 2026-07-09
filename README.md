@@ -13,18 +13,20 @@ Ele é uma **base sanitizada e replicável**, inspirada na lógica operacional u
 
 ## O que este kit entrega
 - estrutura inicial do repositório
-- READMEs por pasta
+- READMEs por pasta com mais densidade operacional
 - templates para contexto, projetos, ferramentas e rotinas
-- skills-base para onboarding, rotina, salvamento e higiene
+- skills-base mais próximas do formato operacional real
 - **skill instalável de onboarding** para o Hermes
+- exemplos de categorias de ferramentas, projetos e rotinas
 - prompt pronto para iniciar uma nova conversa no Hermes
-- orientação para escolher o canal de entrega das rotinas (Discord, Telegram ou WhatsApp)
+- orientação para escolher o canal de entrega das rotinas (Discord, Telegram, Slack ou WhatsApp)
 
 ## O que este kit não entrega
 - dados privados de Paulo Jardim
 - conteúdo de clientes reais
-- backlog interno
-- credenciais, canais ou automações já configuradas
+- backlog interno confidencial
+- credenciais, canais reais ou automações já configuradas
+- processos internos sensíveis da SeuTimeIA/Flexa
 
 ## Fluxo recomendado
 1. Clone este repositório.
@@ -57,7 +59,7 @@ Depois, na nova sessão do Hermes:
 - [`historico/`](./historico/README.md) — legado, arquivados e snapshots
 
 ## Skills-base incluídas
-- `cerebro` — onboarding e boot de contexto
+- `cerebro` — boot de contexto
 - `rotina` — cockpit diário
 - `salve` — flush de fim de sessão
 - `higiene-semanal` — revisão estrutural do brain
@@ -67,7 +69,7 @@ Depois, na nova sessão do Hermes:
 Detalhamento em [`SKILLS-MAP.md`](./SKILLS-MAP.md).
 
 ## Rotinas-base incluídas
-- rotina diária do brain
+- diário do brain
 - revisão semanal/mensal
 - higiene semanal
 - sincronização de projetos/repositórios
@@ -76,6 +78,17 @@ Detalhamento em [`SKILLS-MAP.md`](./SKILLS-MAP.md).
 Detalhamento em [`ROTINAS-MAP.md`](./ROTINAS-MAP.md).
 
 ## Regra-mãe
-**Estrutura se copia. Conteúdo não.**
+**Estrutura se copia. Conteúdo confidencial não.**
 
-Se algo for específico de uma pessoa, empresa, cliente, projeto confidencial, credencial ou canal privado, isso deve ser reconstruído no onboarding — nunca herdado deste repo.
+Você pode aproveitar:
+- forma de organizar pastas
+- forma de estruturar skills
+- exemplos de categorias de ferramentas
+- lógica de rotinas e governança
+
+Você não deve herdar cegamente:
+- segredos
+- dados privados
+- nomes confidenciais de clientes
+- canais reais
+- processos internos sensíveis
