@@ -11,7 +11,7 @@ A regra continua a mesma:
 1. Abra este `README.md` para ver a estrutura do portfólio.
 2. Entre em `active/`, `backlog/` ou `roadmaps/`.
 3. Dentro de cada projeto ativo, use o `README.md` da pasta como mapa do projeto.
-4. Quando existir subpasta `repositorios/`, ela serve para espelhos de contexto técnico (`AGENTS.md`, `CLAUDE.md`, `CHANGELOG.md`, arquitetura, integrações, decisões de stack).
+4. Quando existir subpasta `repositorios/`, ela serve para espelhos de contexto técnico (`CHANGELOG.md`, arquitetura, integrações, decisões de stack).
 
 ## Estrutura recomendada
 | Caminho | Papel | Status esperado |

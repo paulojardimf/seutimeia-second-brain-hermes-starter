@@ -1,3 +1,5 @@
+> Neste método o Hermes já está no Discord da empresa, que é o canal padrão. Este guia vale para quem precisar escolher ou somar outro canal.
+
 # Escolha do canal das rotinas
 
 Use esta tabela para decidir onde o Hermes deve entregar as rotinas.

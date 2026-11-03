@@ -1,164 +1,93 @@
 ---
 name: seutimeia-second-brain-onboard
-description: Onboarding guiado para transformar esta base clonada em um segundo cérebro operacional real, seguindo a metodologia SeuTimeIA.
-version: 2.0.0
-author: SeuTimeIA + Hermes
+description: Conduz pelo Discord a construção do segundo cérebro da operação, a partir de um Hermes já instalado. Confere o ambiente, entrevista as pessoas, preenche o repositório, cria canais e agenda as rotinas de diário e revisões.
+version: 3.0.0
+author: Paulo Jardim e SeuTimeIA
 license: MIT
-platforms: [linux, macos, windows]
+platforms: [linux, macos]
 metadata:
   hermes:
-    tags: [second-brain, onboarding, hermes, github, metodologia-seutimeia]
+    tags: [second-brain, onboarding, hermes, discord, github, rotinas]
 ---
 
-# SeuTimeIA Second Brain Onboard
+# Onboarding do segundo cérebro
 
 ## Quando usar
-Use esta skill imediatamente após clonar o repositório-base do segundo cérebro.
+Quando alguém pedir para montar, iniciar ou retomar o segundo cérebro, ou mandar o link do repositório do método. Frases típicas: "vamos montar o segundo cérebro", "roda o onboarding", "continua de onde paramos".
 
-### Triggers comuns
-- "instala e roda o onboard do segundo cérebro"
-- "vamos iniciar meu second brain"
-- "quero adaptar essa base pra minha realidade"
-- "rodar onboarding do starter kit"
+## Premissa
+O Hermes já está instalado, autenticado e no Discord da empresa. Você trabalha em dois repositórios: o **método** (público, somente leitura) e o **segundo cérebro da empresa** (privado, onde você escreve). Se só existir o método, peça o link do repositório privado e confirme com quem pediu antes de escrever.
 
-## Objetivo
-Transformar esta base genérica em uma primeira versão útil do segundo cérebro do usuário, sem inventar dados, sem burocratizar a operação e sem deixar o repositório com cara de template morto.
+## Regras que valem em todas as etapas
+1. Não invente dados. O que não foi dito fica marcado como lacuna.
+2. Nunca peça, repita ou grave chaves, senhas, tokens ou códigos de convite no chat ou no repositório. Credencial nova vai para o cofre ou `.env` pelo operador.
+3. Conversas não são copiadas. Registre sínteses com autor, data e fonte.
+4. Criar canais, categorias e rotinas exige uma aprovação explícita do operador, uma vez, sobre a lista completa.
+5. Quem fala com você é identificado pelo nome no Discord. Só registre uma pessoa em `context/people.md` com o papel que ela mesma disse ou que o operador confirmou.
+6. Antes de escrever, leia o arquivo atual. Depois de escrever, leia de volta.
+7. Não duplique backlog de ferramentas de execução (Linear, Notion, ClickUp, Jira, planilhas).
+8. Mensagens longas viram thread. Mensagens ao canal principal ficam curtas.
 
-## Regra-mãe
-Você não está preenchendo um template por preencher.
-Você está definindo uma base operacional que precisa ser útil já na primeira semana.
+## Etapa 0 — Diagnóstico do ambiente
+Confira e relate em uma tabela curta o resultado de cada item de `PRE-REQUISITOS.md`: versão do Hermes e serviço persistente, Discord (servidor, canal e quem está autorizado), GitHub (identidade, privacidade do repositório, escrita), modelo e provedor, cofre, e as ferramentas opcionais já ativas (Context7, Firecrawl, provedor de memória). Mostre só o necessário; nunca imprima valores de segredos. Se faltar um item obrigatório, pare e diga exatamente o que falta e quem resolve.
 
-## Princípios
-- perguntar o mínimo necessário para destravar contexto real
-- escrever nos arquivos conforme as respostas aparecem
-- não manter placeholder genérico depois que o usuário já respondeu
-- não duplicar backlog de ferramenta de execução
-- priorizar simplicidade, governança e utilidade prática
-- explicitar trade-offs quando houver mais de um caminho bom
-- separar claramente conteúdo durável de detalhe transitório
+## Etapa 1 — Alinhamento
+Em até seis linhas: o que é este repositório, o que será feito, quanto tempo leva, e que o resultado são contexto, memória e rotinas. Pergunte se a entrevista começa agora.
 
-## Leitura obrigatória antes de começar
-Ler, nesta ordem:
-1. `README.md`
-2. `STARTER-INTERVIEW.md`
-3. `CHANNEL-DECISION.md`
-4. `SKILLS-MAP.md`
-5. `ROTINAS-MAP.md`
-6. `context/README.md`
-7. `projects/README.md`
-8. `skills/README.md`
-9. `rotinas/README.md`
-10. `ferramentas/README.md`
+## Etapa 2 — Entrevista
+Use `STARTER-INTERVIEW.md`. Um bloco por vez, em thread. Aceite áudio. Ao fim de cada bloco, escreva nos arquivos e confirme em duas linhas o que gravou.
 
-## Arquivos-base que podem ser atualizados no onboarding
-- `context/user-profile.md`
-- `context/business-context.md`
-- `context/people.md`
-- `context/canais-e-destinos.md`
-- `context/regras-de-governanca.md`
-- `projects/project-state.md`
-- `README.md` se a operação precisar de framing mais específico
-- `SKILLS-MAP.md` e `ROTINAS-MAP.md` se a primeira versão já estiver clara
+Ordem: identidade operacional, mapa do negócio, pessoas, ferramentas reais, cadência, governança, implantação do Hermes. Para pessoas, liste quem está no servidor Discord e pergunte o papel de cada um em vez de supor.
 
-## Fluxo de execução
+Arquivos que você preenche: `context/user-profile.md`, `context/business-context.md`, `context/people.md`, `context/canais-e-destinos.md`, `context/regras-de-governanca.md`, `projects/project-state.md` e, em `ferramentas/`, uma pasta por ferramenta que o Hermes realmente acessa.
 
-### Etapa 1 — orientar e alinhar
-Explique em 3 a 6 linhas:
-- o que este repositório é
-- o que ele não é
-- como o onboarding vai funcionar
-- qual será a saída ao final
+## Etapa 3 — Canais do Discord
+Liste as categorias e canais existentes e procure algo equivalente ao segundo cérebro. Proponha, sem criar, a estrutura mínima:
 
-### Etapa 2 — conduzir a entrevista
-Use `STARTER-INTERVIEW.md` como roteiro-base.
-Conduza por blocos, sem despejar todas as perguntas de uma vez.
+- categoria **Segundo Cérebro**;
+- `diario` — resumo diário das interações;
+- `revisoes` — revisões semanais, quinzenais e mensais;
+- `decisoes-e-licoes` — decisões, aprendizados, erros e lições, para consulta rápida;
+- `cerebro-testes` — ensaio das rotinas (opcional).
 
-#### Ordem preferida
-1. identidade operacional
-2. mapa do negócio
-3. ferramentas reais
-4. cadência
-5. governança
-6. implantação do Hermes
+Se já houver canal equivalente, use-o e registre o id em `context/canais-e-destinos.md`. Definir as permissões: leitura para o time autorizado, escrita só do Hermes, exceto `cerebro-testes`. Depois da aprovação, crie e releia a lista de canais.
 
-### Etapa 3 — materializar enquanto avança
-À medida que as respostas surgirem, atualizar os arquivos adequados.
+## Etapa 4 — Rotinas
+Proponha o pacote inicial de `rotinas/` com horário, destino e responsável:
 
-#### Regras de materialização
-- se o usuário respondeu, o placeholder deve sumir
-- se a resposta for parcial, registrar o que já está claro e marcar a lacuna explicitamente
-- se uma definição afetar várias áreas, atualizar os arquivos relevantes na mesma rodada
-- se surgir projeto ativo claro, refletir isso em `projects/project-state.md`
-- se surgir ferramenta importante, criar ou adaptar a pasta correspondente em `ferramentas/`
+| Rotina | Padrão | Destino |
+|---|---|---|
+| diário | dias úteis, fim do expediente | `diario` |
+| revisão semanal | sexta, fim do expediente | `revisoes` |
+| revisão quinzenal | dias 1 e 15, manhã | `revisoes` |
+| revisão mensal | dia 1, manhã, sobre o mês anterior | `revisoes` |
+| higiene semanal | segunda, manhã | `revisoes` |
 
-### Etapa 4 — decidir o canal das rotinas
-Usar `CHANNEL-DECISION.md` e fechar uma recomendação prática:
-- canal principal
-- motivo
-- o que fica para depois
-- riscos da escolha
+Ajuste ao fuso e aos horários da empresa. Crie cada job pelo mecanismo de cron do Hermes (confira a sintaxe da versão instalada com `hermes cron --help`), usando o prompt de `rotinas/<nome>/README.md` e as skills `segundo-cerebro-captura` e `segundo-cerebro-revisao`. Rode cada uma uma vez em `cerebro-testes` ou manualmente e confirme que a mensagem chegou no destino e que o repositório foi atualizado. Registre estado real em `rotinas/STATUS.md`: o que foi criado, o que foi testado e o que ficou pendente.
 
-Registrar em `context/canais-e-destinos.md`.
+## Etapa 5 — Ferramentas opcionais
+Para cada camada opcional (Context7, Firecrawl, memória), diga o que ela acrescenta, o custo e o que o operador precisa fazer. Não ative nada sem a chave estar no cofre. Registre em `ferramentas/<nome>/README.md` o estado real.
 
-### Etapa 5 — recomendar o pacote inicial
-Ao final, entregar:
-1. skills que devem ser usadas agora
-2. rotinas que devem ser ativadas agora
-3. rotinas que devem esperar
-4. playbooks que farão sentido depois
-5. principais lacunas ainda não preenchidas
-6. próximos passos concretos
+## Etapa 6 — Entrega
+Feche com:
 
-## Critérios de decisão que a skill deve usar
+1. **Estrutura adaptada**: o que foi preenchido, ajustado e o que falta.
+2. **Decisões de operação**: canal principal, ferramenta de execução, fronteira entre contexto durável e backlog, quem pode corrigir ou excluir registros.
+3. **Rotinas ativas** e as que esperam.
+4. **Riscos e lacunas**.
+5. **Próximos 3 a 7 passos**, com responsável.
 
-### Ferramenta de execução principal
-- se o usuário já usa Linear, ClickUp, Notion ou Jira com disciplina: não duplicar backlog no repositório
-- se não existe ferramenta viva: usar o repositório como mapa de contexto, não como task manager improvisado
+Faça um commit com mensagem clara e envie a síntese ao canal principal com o link do commit.
 
-### Canal das rotinas
-- Discord: melhor para operação viva com múltiplos canais/threads
-- Telegram: melhor para acompanhamento pessoal direto
-- Slack: melhor quando o time/cliente já vive lá
-- WhatsApp: melhor para adoção fácil, pior para governança
-- Web/CLI: melhor para fase inicial sem entrega proativa ainda
-
-### Profundidade da implantação
-- operação pequena → manter estrutura curta e viva
-- operação com equipe, clientes e múltiplas ferramentas → aprofundar mapas e fronteiras
-
-## Saída final esperada
-Fechar o onboarding com este formato:
-
-### 1. Estrutura adaptada
-- o que foi preenchido
-- o que foi ajustado
-- o que ainda falta
-
-### 2. Decisões de operação
-- canal principal
-- ferramenta de execução principal
-- fronteira entre contexto durável e backlog
-- ferramentas que entram e ferramentas que ficam fora
-
-### 3. Pacote inicial recomendado
-- skills iniciais
-- rotinas iniciais
-- playbooks necessários depois
-
-### 4. Riscos e lacunas
-- o que ainda está ambíguo
-- o que não deveria ser automatizado ainda
-
-### 5. Próximos passos
-- 3 a 7 passos concretos
+## Retomada
+Se a entrevista parar, grave o ponto em `projects/project-state.md` (seção "Onboarding") com o bloco atual e as lacunas. Ao ser chamado de novo, leia essa seção e continue dali, sem repetir perguntas já respondidas.
 
 ## Anti-padrões
-- responder com consultoria genérica
-- criar projeto fictício
-- criar rotina só porque “parece sofisticado”
-- duplicar backlog da ferramenta de execução
-- deixar placeholders genéricos intactos depois das respostas
-- automatizar antes de definir canal, fonte canônica e governança
+- consultoria genérica no lugar de perguntas específicas;
+- criar canal ou rotina sem aprovação;
+- registrar algo que ninguém disse;
+- automatizar antes de definir canal, fonte canônica e governança;
+- deixar placeholders depois de a pessoa ter respondido.
 
 ## Regra de ouro
-Melhor um segundo cérebro simples, vivo e usado do que um sistema bonito, complexo e morto.
+Melhor um segundo cérebro simples e usado do que um sistema bonito e abandonado.

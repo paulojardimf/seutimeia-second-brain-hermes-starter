@@ -10,8 +10,11 @@ A regra é simples: **cada ferramenta relevante vive na própria pasta**. Isso e
 |---|---|---|---|
 | Hermes | `hermes/` | agente principal, skills, crons, gateway e memória | ativo |
 | GitHub | `github/` | repositório canônico e publicação | ativo |
+| Context7 | `context7/` | documentação atual de bibliotecas e APIs | opcional |
+| Firecrawl | `firecrawl/` | busca e leitura estruturada da web | opcional |
+| Memória | `memoria/` | fatos e entidades entre sessões | recomendada |
 | Linear | `linear/` | backlog, projetos, issues e follow-up | opcional |
-| Discord | `discord/` | cockpit operacional com threads/canais | opcional |
+| Discord | `discord/` | canal de conversa com o Hermes, threads e entrega das rotinas | ativo |
 | Telegram | `telegram/` | acompanhamento pessoal e rotinas diretas | opcional |
 | Slack | `slack/` | operação em times que já vivem no Slack | opcional |
 | Notion | `notion/` | documentação, proposta, bases de dados | opcional |
@@ -20,7 +23,6 @@ A regra é simples: **cada ferramenta relevante vive na própria pasta**. Isso e
 | Sentry | `sentry/` | observabilidade de erros | opcional |
 | Langfuse | `langfuse/` | tracing e monitoramento de agentes/LLMs | opcional |
 | MCP | `mcp/` | camada de tools padronizadas | opcional |
-| Workers de código e leitura | `workers-de-codigo-e-leitura/` | leitura pesada e execução delegada | opcional |
 
 ## Regra operacional
 Ferramenta entra aqui só quando houver:

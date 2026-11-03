@@ -13,7 +13,7 @@ O Hermes deve conduzir a entrevista nesta ordem:
 3. O que fica no segundo cérebro e o que continua em ferramentas de execução (Linear, Notion, ClickUp, etc.)?
 
 ## Bloco 3 — ferramentas reais
-1. Quais canais de comunicação são usados no dia a dia?
+1. Quais canais de comunicação são usados no dia a dia, e quem do servidor Discord usa o Hermes e com que papel?
 2. Quais ferramentas precisam ser mapeadas no brain?
 3. Quais integrações o Hermes realmente terá acesso para operar?
 
@@ -26,10 +26,12 @@ O Hermes deve conduzir a entrevista nesta ordem:
 1. Quem pode ver este brain?
 2. O que é público, privado, sensível ou restrito?
 3. Onde ficam credenciais, dados pessoais e backlog?
+4. Quem decide correções e exclusões na memória e quem pode incluir novas pessoas?
+5. O time foi avisado de que as conversas com o Hermes alimentam decisões, fatos, aprendizados e lições?
 
 ## Bloco 6 — implantação do Hermes
-1. Qual canal deve receber as saídas das rotinas?
-2. O Hermes operará no Discord, Telegram, WhatsApp, email ou web apenas?
+1. Já existe canal para o segundo cérebro? Se não, aceita a estrutura `diario`, `revisoes`, `decisoes-e-licoes`?
+2. Em que horários e fuso devem rodar o diário e as revisões?
 3. Quais skills precisam ser adaptadas agora e quais ficam para depois?
 
 ## Saída esperada

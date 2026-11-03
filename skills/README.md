@@ -13,30 +13,21 @@ Skills aqui não são decoração. Elas existem para codificar:
 ## Conteúdo atual
 | Skill / grupo | Caminho | Papel |
 |---|---|---|
-| onboarding instalável | `installable/seutimeia-second-brain-onboard/` | conduzir a implantação inicial do repo clonado |
+| onboarding | `installable/seutimeia-second-brain-onboard/` | conduzir a construção do segundo cérebro pelo Discord |
+| captura | `installable/segundo-cerebro-captura/` | gravar decisões, fatos, aprendizados, erros e lições do dia |
+| revisão | `installable/segundo-cerebro-revisao/` | revisões semanal, quinzenal e mensal |
 | `cerebro` | `starter/cerebro/` | ligar contexto e produzir briefing curto |
 | `rotina` | `starter/rotina/` | cockpit diário curto |
-| `salve` | `starter/salve/` | flush de fim de sessão |
+| `salve` | `starter/salve/` | gravar o que importa ao fim de uma sessão |
 | `higiene-semanal` | `starter/higiene-semanal/` | revisão estrutural semanal |
 | `varredura-de-sessoes` | `starter/varredura-de-sessoes/` | consolidado executivo de sessões |
 
-## Skill instalável principal
-A primeira skill que deve ser instalada é:
-- `seutimeia-second-brain-onboard`
-
-Origem no repositório:
-- `skills/installable/seutimeia-second-brain-onboard/SKILL.md`
-
-Instalação local:
+## Instalação
+O Hermes roda, a partir da raiz do repositório:
 ```bash
 bash scripts/install-onboard-skill.sh
 ```
-
-Depois:
-1. abra uma nova sessão no Hermes neste diretório
-2. rode `/reload-skills` se necessário
-3. carregue `/skill seutimeia-second-brain-onboard`
-4. diga: `vamos iniciar meu second brain`
+O script copia todas as skills de `installable/` para a pasta de skills do Hermes (`$HERMES_HOME/skills`, por padrão `~/.hermes/skills`). Depois, no Hermes: `/reload-skills` e `/skill seutimeia-second-brain-onboard`.
 
 ## Regra de modelagem
 Skill boa tem, no mínimo:

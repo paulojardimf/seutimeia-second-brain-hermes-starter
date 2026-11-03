@@ -1,14 +1,25 @@
 # Canais e destinos
 
 ## Canal principal do Hermes
-- Plataforma:
-- Canal/Grupo/Thread:
-- Objetivo:
+- Plataforma: Discord
+- Servidor:
+- Canal principal (id):
+- Quem pode falar com o Hermes (nomes):
+- Mensagens diretas: fechadas
+
+## Canais do segundo cérebro
+| Canal | Id | Para quê | Quem lê | Criado em |
+|---|---|---|---|---|
+| `diario` | | resumo diário | | |
+| `revisoes` | | revisões periódicas | | |
+| `decisoes-e-licoes` | | consulta rápida | | |
+| `cerebro-testes` | | ensaio das rotinas | | |
 
 ## Rotinas e destinos
-| Rotina | Destino | Motivo |
+| Rotina | Destino | Horário e fuso |
 |---|---|---|
-| diário do brain | | |
-| revisão semanal | | |
-| higiene semanal | | |
-| sync de projetos | | |
+| diário | `diario` | |
+| revisão semanal | `revisoes` | |
+| revisão quinzenal | `revisoes` | |
+| revisão mensal | `revisoes` | |
+| higiene semanal | `revisoes` | |

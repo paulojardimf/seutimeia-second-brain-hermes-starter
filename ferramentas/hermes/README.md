@@ -12,8 +12,8 @@ Hermes é o agente principal que lê contexto, executa, registra, automatiza e i
 - padrões de uso (`/skill`, `/reload-skills`, `/cron`, `/restart`)
 
 ## Credenciais e configuração
-- `~/.hermes/.env` guarda segredos
-- `~/.hermes/config.yaml` guarda configuração
+- segredos ficam no cofre da empresa ou no `.env` do Hermes
+- a configuração fica no `config.yaml` do Hermes
 - credenciais nunca entram neste repositório
 
 ## Exemplos de decisões importantes

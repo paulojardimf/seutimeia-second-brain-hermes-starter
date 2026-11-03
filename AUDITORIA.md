@@ -1,28 +1,27 @@
 # Auditoria de sanitização
 
 ## Objetivo
-Registrar o que foi aproveitado como **estrutura** e o que foi removido por ser **conteúdo privado ou específico**.
+Registrar o que foi usado como **estrutura** e o que foi mantido fora por ser conteúdo privado ou específico.
 
-## O que foi usado como referência
-- separação entre contexto, projetos, skills, rotinas, ferramentas, playbooks e histórico
-- regra de README por pasta
-- distinção entre contexto durável e backlog operacional
-- lógica de skills-base (`cerebro`, `rotina`, `salve`)
-- lógica de rotinas recorrentes do segundo cérebro
+## O que serve de referência
+- separação entre contexto, projetos, memória, skills, rotinas, ferramentas, playbooks e histórico;
+- regra de README por pasta;
+- distinção entre contexto durável e backlog operacional;
+- skills de onboarding, captura e revisão;
+- cadência de diário e revisões.
 
-## O que NÃO foi copiado
-- dados pessoais detalhados
-- clientes reais
-- projetos confidenciais
-- repositórios privados
-- canais reais
-- IDs de Discord/Telegram/WhatsApp
-- cron jobs reais
-- arquivos do diário pessoal
-- memória privada
-- qualquer credencial ou dado sensível
+## O que não está neste repositório
+- dados pessoais ou de negócio de qualquer pessoa ou empresa;
+- clientes, projetos e repositórios privados;
+- canais, ids de Discord, Telegram ou WhatsApp reais;
+- cron jobs reais e arquivos de diário;
+- memória privada, credenciais e chaves.
 
-## Regra de revisão antes de publicar derivações
-1. procurar nomes próprios, clientes, projetos e canais reais
-2. remover qualquer ID, URL privada ou referência operacional sensível
-3. validar se o arquivo ensina a estrutura sem expor o conteúdo
+## Revisão de 03/11/2026
+Varredura do conteúdo atual (arquivos e nomes) por: nomes de pessoas e empresas, ids numéricos longos, URLs de convite, tokens, chaves, e-mails e caminhos locais de servidor. A mensagem de convite que citava o nome de um mentorado foi removida; o nome continua no histórico do Git. Fora a menção às pastas padrão do Hermes (`~/.hermes`) nos scripts, nada de ambiente privado foi encontrado.
+
+## Regra antes de publicar derivações
+1. procurar nomes próprios, clientes, projetos e canais reais;
+2. remover ids, URLs privadas e referências operacionais sensíveis;
+3. conferir se o arquivo ensina a estrutura sem expor conteúdo;
+4. repetir a varredura depois de cada mudança relevante.
