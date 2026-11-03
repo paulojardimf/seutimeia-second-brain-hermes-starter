@@ -29,7 +29,7 @@ O Hermes já está instalado, autenticado e no Discord da empresa. Você trabalh
 8. Mensagens longas viram thread. Mensagens ao canal principal ficam curtas.
 
 ## Etapa 0 — Diagnóstico do ambiente
-Confira e relate em uma tabela curta o resultado de cada item de `PRE-REQUISITOS.md`: versão do Hermes e serviço persistente, Discord (servidor, canal e quem está autorizado), GitHub (identidade, privacidade do repositório, escrita), modelo e provedor, cofre, e as ferramentas opcionais já ativas (Context7, Firecrawl, provedor de memória). Mostre só o necessário; nunca imprima valores de segredos. Se faltar um item obrigatório, pare e diga exatamente o que falta e quem resolve.
+Confira e relate em uma tabela curta o resultado de cada item de `PRE-REQUISITOS.md`: versão do Hermes e serviço persistente, Discord (servidor, canal e quem está autorizado), GitHub (identidade, privacidade do repositório, escrita), modelo e provedor, cofre, e as ferramentas opcionais já ativas (Context7, Firecrawl, provedor de memória). Faça também o inventário do que já existe no servidor: bancos de dados (por exemplo PostgreSQL e extensões como pgvector), serviços em execução, provedor de memória do Hermes, ferramentas MCP, versões e espaço em disco. Registre em `ferramentas/` e use na Etapa 5 em vez de propor o que já está instalado. Mostre só o necessário; nunca imprima valores de segredos. Se faltar um item obrigatório, pare e diga exatamente o que falta e quem resolve.
 
 ## Etapa 1 — Alinhamento
 Em até seis linhas: o que é este repositório, o que será feito, quanto tempo leva, e que o resultado são contexto, memória e rotinas. Pergunte se a entrevista começa agora.
@@ -38,6 +38,8 @@ Em até seis linhas: o que é este repositório, o que será feito, quanto tempo
 Use `STARTER-INTERVIEW.md`. Um bloco por vez, em thread. Aceite áudio. Ao fim de cada bloco, escreva nos arquivos e confirme em duas linhas o que gravou.
 
 Ordem: identidade operacional, mapa do negócio, pessoas, ferramentas reais, cadência, governança, implantação do Hermes. Para pessoas, liste quem está no servidor Discord e pergunte o papel de cada um em vez de supor.
+
+Skills que o time pedir ao longo do processo, ou que o Hermes criar, são gravadas em `skills/autorais/`, conforme o README da pasta.
 
 Arquivos que você preenche: `context/user-profile.md`, `context/business-context.md`, `context/people.md`, `context/canais-e-destinos.md`, `context/regras-de-governanca.md`, `projects/project-state.md` e, em `ferramentas/`, uma pasta por ferramenta que o Hermes realmente acessa.
 
@@ -65,8 +67,8 @@ Proponha o pacote inicial de `rotinas/` com horário, destino e responsável:
 
 Ajuste ao fuso e aos horários da empresa. Crie cada job pelo mecanismo de cron do Hermes (confira a sintaxe da versão instalada com `hermes cron --help`), usando o prompt de `rotinas/<nome>/README.md` e as skills `segundo-cerebro-captura` e `segundo-cerebro-revisao`. Rode cada uma uma vez em `cerebro-testes` ou manualmente e confirme que a mensagem chegou no destino e que o repositório foi atualizado. Registre estado real em `rotinas/STATUS.md`: o que foi criado, o que foi testado e o que ficou pendente.
 
-## Etapa 5 — Ferramentas opcionais
-Para cada camada opcional (Context7, Firecrawl, memória), diga o que ela acrescenta, o custo e o que o operador precisa fazer. Não ative nada sem a chave estar no cofre. Registre em `ferramentas/<nome>/README.md` o estado real.
+## Etapa 5 — Ferramentas e memória
+Para cada camada (Context7, Firecrawl, memória), diga o que já está instalado e testado, o que falta, o custo e o que o operador precisa fazer. Não ative nada sem a chave estar no cofre. Registre em `ferramentas/<nome>/README.md` o estado real.
 
 ## Etapa 6 — Entrega
 Feche com:

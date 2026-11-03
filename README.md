@@ -28,9 +28,9 @@ Se algum ponto faltar, a skill de onboarding diagnostica e diz o que falta antes
 |---|---|---|
 | **Contexto** | Quem somos, o que fazemos e como decidimos? | [`context/`](./context/README.md), [`projects/`](./projects/README.md), [`ferramentas/`](./ferramentas/README.md) |
 | **Memória** | O que aconteceu, o que decidimos e o que aprendemos? | [`diario/`](./diario/README.md), [`memoria/`](./memoria/README.md) |
-| **Cadência** | O que roda sozinho e com que método? | [`rotinas/`](./rotinas/README.md), [`skills/`](./skills/README.md) |
+| **Skills e rotinas** | Como a operação trabalha, e o que roda sozinho? | [`skills/`](./skills/README.md), [`rotinas/`](./rotinas/README.md) |
 
-Contexto muda devagar e é revisado por pessoas. Memória cresce todo dia e é escrita pelo Hermes a partir das conversas. Cadência é o que transforma a primeira em segunda sem esforço manual.
+Contexto muda devagar e é revisado por pessoas. Memória cresce todo dia e é escrita pelo Hermes a partir das conversas. Skills e rotinas são o método da operação: as skills que o time e o Hermes criam nas interações (em [`skills/autorais/`](./skills/autorais/README.md)) e os crons que mantêm tudo vivo.
 
 ## Como começar
 
@@ -71,7 +71,7 @@ Cada item recebe data, fonte e autor. Conversas inteiras não são copiadas. Det
 | [`memoria/`](./memoria/README.md) | decisões, fatos, aprendizados, erros e lições |
 | [`diario/`](./diario/README.md) | diário executivo por dia |
 | [`rotinas/`](./rotinas/README.md) | crons, horários, destinos e prompts |
-| [`skills/`](./skills/README.md) | skills instaláveis e skills-base |
+| [`skills/`](./skills/README.md) | skills do método e [`skills/autorais/`](./skills/autorais/README.md), criadas pela operação |
 | [`playbooks/`](./playbooks/README.md) | procedimentos reutilizáveis |
 | [`agentes/`](./agentes/README.md) | papéis e regras do agente |
 | [`historico/`](./historico/README.md) | legado e arquivados, fora do contexto padrão |

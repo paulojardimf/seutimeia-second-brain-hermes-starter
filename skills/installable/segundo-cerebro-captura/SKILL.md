@@ -36,6 +36,9 @@ Todo registro tem **data, autor, fonte (canal ou sessão e link) e confiança** 
 
 Depois grava o diário em `diario/AAAA/MM/AAAA-MM-DD.md`, com as seções: o que foi feito, decisões (links), fatos novos (links), aprendizados e erros (links), pendências com responsável, perguntas em aberto.
 
+## Skills criadas na operação
+Se, nas interações do dia, o Hermes criou ou ajustou uma skill para o time (ou se um processo se repetiu e merece uma), confira se a cópia está em `skills/autorais/<nome>/SKILL.md`. Grave a cópia, atualize o índice em `skills/autorais/README.md` e cite a skill no diário. Skill nova só é proposta, nunca criada sem o pedido ou a aprovação de uma pessoa.
+
 ## Regras
 - Síntese, não transcrição. Cite no máximo uma frase curta quando o texto exato importar.
 - Atribua decisões a quem decidiu. Pergunta ou sugestão do Hermes não é decisão do cliente.
