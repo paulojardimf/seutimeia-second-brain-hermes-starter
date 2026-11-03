@@ -2,7 +2,7 @@
 name: segundo-cerebro-revisao
 description: Faz as revisões semanal, quinzenal e mensal do segundo cérebro a partir do diário e dos registros de memória, e entrega padrões, riscos e próximos passos.
 version: 1.0.0
-author: Paulo Jardim
+author: Paulo Jardim e SeuTimeIA
 license: MIT
 platforms: [linux, macos]
 metadata:

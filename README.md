@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/pj-lockup-grafite.svg">
-    <img src="assets/pj-lockup-papel.svg" alt="Paulo Jardim" width="420">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/par-horizontal-grafite.svg">
+    <img src="assets/par-horizontal-papel.svg" alt="Paulo Jardim e SeuTimeIA" width="560">
   </picture>
 </p>
 
@@ -84,4 +84,4 @@ Segunda regra: **estrutura se copia, conteúdo confidencial não.** Segredos, da
 
 ---
 
-Método de implantação de agentes por [Paulo Jardim](https://github.com/paulojardimf). Auditoria de sanitização em [`AUDITORIA.md`](./AUDITORIA.md).
+Método de implantação de agentes por [Paulo Jardim](https://github.com/paulojardimf) e SeuTimeIA. Auditoria de sanitização em [`AUDITORIA.md`](./AUDITORIA.md).

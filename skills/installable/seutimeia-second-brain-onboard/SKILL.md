@@ -2,7 +2,7 @@
 name: seutimeia-second-brain-onboard
 description: Conduz pelo Discord a construção do segundo cérebro da operação, a partir de um Hermes já instalado. Confere o ambiente, entrevista as pessoas, preenche o repositório, cria canais e agenda as rotinas de diário e revisões.
 version: 3.0.0
-author: Paulo Jardim
+author: Paulo Jardim e SeuTimeIA
 license: MIT
 platforms: [linux, macos]
 metadata:

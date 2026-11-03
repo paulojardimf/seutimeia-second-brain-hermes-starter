@@ -2,7 +2,7 @@
 name: segundo-cerebro-captura
 description: Lê as interações do dia entre as pessoas autorizadas e o Hermes e grava no segundo cérebro as decisões, fatos, aprendizados, erros e lições, mais o diário do dia.
 version: 1.0.0
-author: Paulo Jardim
+author: Paulo Jardim e SeuTimeIA
 license: MIT
 platforms: [linux, macos]
 metadata:
