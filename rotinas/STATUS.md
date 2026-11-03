@@ -1,17 +1,14 @@
 # Status executivo das rotinas
 
-## Objetivo
-Dar uma leitura única e rápida do parque inicial de rotinas do second brain: o que existe, para quê serve, onde entregaria e qual o nível de prioridade.
+Atualize este arquivo quando uma rotina for criada, alterada ou testada. Estado inicial: nenhuma rotina criada.
 
-## Tabela executiva
-| Rotina | Categoria | Estado inicial | Criticidade | Destino sugerido | Frequência sugerida | Papel |
-|---|---|---|---|---|---|---|
-| `diario-do-brain` | segundo cérebro | não configurada | alta | Discord ou Telegram | dias úteis | consolidar decisões, sinais e foco |
-| `revisao-semanal-mensal` | segundo cérebro | não configurada | alta | Discord | semanal | atualizar leitura executiva da semana/mês |
-| `higiene-semanal` | segundo cérebro | não configurada | alta | Discord | semanal | impedir drift estrutural |
-| `sync-projetos-repos` | segundo cérebro | não configurada | média | Discord | semanal | alinhar projetos, repositórios e contexto |
-| `followup-operacional` | comunicação | opcional | média | Discord, Slack ou Telegram | semanal | lembrar pendências, decisões e donos |
-| `watchdog-infra` | infra | opcional | alta | Discord ou Slack | recorrente | alertar incidente operacional real |
+| Rotina | Estado | Cron padrão | Destino | Skill | Último teste |
+|---|---|---|---|---|---|
+| [`diario-do-brain`](./diario-do-brain/README.md) | não criada | `0 18 * * 1-5` | `diario` | `segundo-cerebro-captura` | — |
+| [`revisao-semanal`](./revisao-semanal/README.md) | não criada | `0 17 * * 5` | `revisoes` | `segundo-cerebro-revisao` | — |
+| [`revisao-quinzenal`](./revisao-quinzenal/README.md) | não criada | `0 9 1,15 * *` | `revisoes` | `segundo-cerebro-revisao` | — |
+| [`revisao-mensal`](./revisao-mensal/README.md) | não criada | `0 9 1 * *` | `revisoes` | `segundo-cerebro-revisao` | — |
+| [`higiene-semanal`](./higiene-semanal/README.md) | não criada | `0 9 * * 1` | `revisoes` | `higiene-semanal` | — |
+| [`sync-projetos-repos`](./sync-projetos-repos/README.md) | opcional | semanal | `revisoes` | — | — |
 
-## Regra de atualização
-Quando uma rotina for criada, alterada materialmente ou ganhar destino/canal real, o `README.md` da rotina e este arquivo devem refletir isso.
+Estados: `não criada`, `criada, sem teste`, `testada`, `pausada`. Só registre `testada` com a data e o resultado da execução real.

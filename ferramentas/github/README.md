@@ -7,10 +7,10 @@ Fonte canônica da memória operacional versionada.
 - hospedar o segundo cérebro
 - publicar playbooks e skills sanitizadas
 - versionar diário, contexto e projetos
-- manter espelhos de `AGENTS.md`, `CLAUDE.md`, `CHANGELOG.md`
+- manter o `CHANGELOG.md` e a documentação técnica dos projetos
 
 ## Credenciais e segurança
-- token fica em `~/.hermes/.env`
+- a credencial fica no cofre da empresa ou no `.env` do Hermes, nunca no repositório
 - não colocar PAT, SSH key, cookie ou secret no repositório
 - preferir push canônico: `status` → `add` → `commit` → `pull --rebase` → `push`
 
