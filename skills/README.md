@@ -29,6 +29,9 @@ bash scripts/install-onboard-skill.sh
 ```
 O script copia todas as skills de `installable/` para a pasta de skills do Hermes (`$HERMES_HOME/skills`, por padrão `~/.hermes/skills`). Depois, no Hermes: `/reload-skills` e `/skill seutimeia-second-brain-onboard`.
 
+## Skills autorais da operação
+Todas as skills que o Hermes criar nas interações com o time, e que não vêm prontas com o Hermes nem com este método, ficam em [`autorais/`](./autorais/README.md), versionadas no repositório da empresa.
+
 ## Regra de modelagem
 Skill boa tem, no mínimo:
 - objetivo

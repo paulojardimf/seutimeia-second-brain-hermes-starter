@@ -12,6 +12,11 @@ Camada de memória que complementa este repositório. O segundo cérebro guarda 
 
 GBrain é de [Garry Tan](https://github.com/garrytan/gbrain) e Honcho é da [Plastic Labs](https://github.com/plastic-labs/honcho) (licença AGPL-3.0; leia as obrigações antes de empacotar). Instale pelas fontes oficiais, em versão fixada.
 
+## Como as camadas se encaixam no Hermes
+O Hermes aceita **um** provedor de memória externo por vez. A camada 1 (Holographic) é esse provedor: instale com `hermes plugins install holographic` e ative com `memory.provider: holographic`. GBrain e Honcho não competem com ele: entram por uma ponte MCP local (um servidor `shared-memory` registrado com `hermes mcp add`), que grava e busca nos dois e permite corrigir e retirar registros. Cada camada acima da 1 é um serviço a mais para manter, com banco, credenciais e backup próprios.
+
+Antes de propor qualquer camada, o Hermes confere o que já existe no servidor (PostgreSQL com pgvector, serviços e plugins), como pede a etapa 0 da skill de onboarding.
+
 ## Princípios
 - comece pela camada 1 e só suba de camada com uso real que justifique;
 - cada instalação do cliente é isolada: usuário, banco, credenciais e processo próprios;
