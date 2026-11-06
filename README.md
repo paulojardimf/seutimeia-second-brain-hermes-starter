@@ -81,6 +81,16 @@ Cada item recebe data, fonte e autor. Conversas inteiras não são copiadas. Det
 **README ou pasta.** Toda pasta relevante tem um `README.md` que diz o propósito, o conteúdo, o que está ativo e como o agente lê e escreve ali.
 
 Segunda regra: **estrutura se copia, conteúdo confidencial não.** Segredos, dados pessoais e credenciais não entram neste repositório. Ele deve ser privado quando contiver contexto real da sua empresa (veja [`context/regras-de-governanca.md`](./context/regras-de-governanca.md)).
+O bloco "Mapa da pasta" de cada README é gerado e conferido por [`scripts/gerar-mapas-de-pasta.py`](./scripts/gerar-mapas-de-pasta.py).
+
+## Se você é um agente entrando agora
+
+1. Leia este README e `context/regras-de-governanca.md`: privacidade, publicação e limites.
+2. Leia `projects/project-state.md` e `rotinas/STATUS.md` para saber o estado atual.
+3. Procure antes de escrever: busque em `memoria/` e `ferramentas/` se o assunto já existe.
+4. Escreva cada registro na pasta certa, com data, autor, fonte e confiança, nos modelos de `memoria/_modelos/`.
+5. Ao criar arquivo ou pasta, atualize o README da pasta e, se for pasta nova, a estrutura deste README.
+6. Na dúvida sobre permissão ou dado sensível, não grave: registre a pergunta no diário.
 
 ---
 

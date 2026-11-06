@@ -1,7 +1,7 @@
 ---
 name: seutimeia-second-brain-onboard
 description: Conduz pelo Discord a construção do segundo cérebro da operação, a partir de um Hermes já instalado. Confere o ambiente, entrevista as pessoas, preenche o repositório, cria canais e agenda as rotinas de diário e revisões.
-version: 3.0.0
+version: 3.1.0
 author: Paulo Jardim e SeuTimeIA
 license: MIT
 platforms: [linux, macos]
@@ -93,3 +93,11 @@ Se a entrevista parar, grave o ponto em `projects/project-state.md` (seção "On
 
 ## Regra de ouro
 Melhor um segundo cérebro simples e usado do que um sistema bonito e abandonado.
+
+## Índices e README (padrão do cérebro)
+Cada pasta do cérebro é navegável: quem abre o `README.md` encontra o propósito, o que não entra e a lista dos arquivos com link.
+- Ao criar, renomear ou mover um arquivo, atualize no mesmo commit o `README.md` da pasta (bloco "Mapa da pasta", com link relativo e uma linha dizendo o que é). Atualizar o índice não autoriza alterar o conteúdo dos registros existentes.
+- Pasta nova nasce com `README.md` (propósito, o que entra, o que não entra, quem escreve) e ganha uma linha na tabela "Estrutura" do `README.md` da raiz.
+- O README da raiz mantém: o que o repositório é, a regra "README ou pasta", a estrutura com links, as fontes de verdade e "se você é um agente entrando agora". Estado e histórico vão para `projects/project-state.md`, `rotinas/STATUS.md` e `historico/`, não para o README da raiz.
+- Pasta com mais de dez arquivos agrupa por tema ou por ano no README, em vez de só listar.
+- Todo link é relativo e conferido: antes do commit, verifique que cada destino dos README alterados existe. O script `scripts/gerar-mapas-de-pasta.py` gera e confere os mapas.
