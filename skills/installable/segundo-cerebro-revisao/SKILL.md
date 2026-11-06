@@ -1,7 +1,7 @@
 ---
 name: segundo-cerebro-revisao
 description: Faz as revisões semanal, quinzenal e mensal do segundo cérebro a partir do diário e dos registros de memória, e entrega padrões, riscos e próximos passos.
-version: 1.0.0
+version: 1.1.0
 author: Paulo Jardim e SeuTimeIA
 license: MIT
 platforms: [linux, macos]
@@ -36,6 +36,9 @@ Nas rotinas semanal, quinzenal e mensal, ou quando alguém pedir "revisão da se
 4. Proponha mudanças concretas, cada uma com origem nos registros: atualizar `context/`, ajustar uma rotina, criar ou corrigir uma skill, tratar um risco. Uma proposta por item, com quem decide.
 5. Na revisão mensal, inclua uma leitura executiva: o que melhorou, o que piorou, o que o time deveria discutir.
 6. Grave a revisão em `diario/revisoes/AAAA/` (`semanal-AAAA-Sww.md`, `quinzenal-AAAA-MM-qq.md`, `mensal-AAAA-MM.md`), releia e faça commit.
+
+## Índices e README (padrão do cérebro)
+Na cobertura da revisão, confira também a navegação: pastas sem `README.md`, arquivos novos que não aparecem na lista do README da pasta, tabela "Estrutura" do README da raiz desatualizada e links quebrados. Corrigir índice e link não depende de aprovação, desde que o conteúdo dos registros fique intacto; registre a correção na revisão.
 
 ## Regras
 - Só afirme o que os registros sustentam; cite o arquivo.

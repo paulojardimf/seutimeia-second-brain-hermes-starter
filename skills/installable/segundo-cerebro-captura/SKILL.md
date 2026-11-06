@@ -1,7 +1,7 @@
 ---
 name: segundo-cerebro-captura
 description: Lê as interações do dia entre as pessoas autorizadas e o Hermes e grava no segundo cérebro as decisões, fatos, aprendizados, erros e lições, mais o diário do dia.
-version: 1.0.0
+version: 1.1.0
 author: Paulo Jardim e SeuTimeIA
 license: MIT
 platforms: [linux, macos]
@@ -38,6 +38,14 @@ Depois grava o diário em `diario/AAAA/MM/AAAA-MM-DD.md`, com as seções: o que
 
 ## Skills criadas na operação
 Se, nas interações do dia, o Hermes criou ou ajustou uma skill para o time (ou se um processo se repetiu e merece uma), confira se a cópia está em `skills/autorais/<nome>/SKILL.md`. Grave a cópia, atualize o índice em `skills/autorais/README.md` e cite a skill no diário. Skill nova só é proposta, nunca criada sem o pedido ou a aprovação de uma pessoa.
+
+## Índices e README (padrão do cérebro)
+Cada pasta do cérebro é navegável: quem abre o `README.md` encontra o propósito, o que não entra e a lista dos arquivos com link.
+- Ao criar, renomear ou mover um arquivo, atualize no mesmo commit o `README.md` da pasta (bloco "Mapa da pasta", com link relativo e uma linha dizendo o que é). Atualizar o índice não autoriza alterar o conteúdo dos registros existentes.
+- Pasta nova nasce com `README.md` (propósito, o que entra, o que não entra, quem escreve) e ganha uma linha na tabela "Estrutura" do `README.md` da raiz.
+- O README da raiz mantém: o que o repositório é, a regra "README ou pasta", a estrutura com links, as fontes de verdade e "se você é um agente entrando agora". Estado e histórico vão para `projects/project-state.md`, `rotinas/STATUS.md` e `historico/`, não para o README da raiz.
+- Pasta com mais de dez arquivos agrupa por tema ou por ano no README, em vez de só listar.
+- Todo link é relativo e conferido: antes do commit, verifique que cada destino dos README alterados existe. O script `scripts/gerar-mapas-de-pasta.py` gera e confere os mapas.
 
 ## Regras
 - Síntese, não transcrição. Cite no máximo uma frase curta quando o texto exato importar.
